@@ -14,13 +14,13 @@ describe('index.js', function () {
       });
     });
 
-    describe('removeLast()', function () {
+    describe('removeLast', function () {
       it('removes the last pet from the pets array', function () {
         expect(removeLast).to.have.ordered.members(["Milo", "Otis"]).and.to.not.include('Garfield');
       });
     });
 
-    describe('removeFirst()', function () {
+    describe('removeFirst', function () {
       it('removes the First pet from the pets array', function () {
         expect(removeFirst).to.have.ordered.members(["Otis", "Garfield"]).and.to.not.include('Milo');
       });
